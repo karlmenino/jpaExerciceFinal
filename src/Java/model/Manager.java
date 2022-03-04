@@ -14,6 +14,9 @@ public class Manager extends Person{
     @OneToMany(mappedBy = "manager")
     private List<Artist> artists = new ArrayList<>();
 
+    public Manager() {
+    }
+
     public Manager(String firstName, String lastName, int budget) {
         super(firstName, lastName);
         this.budget = budget;

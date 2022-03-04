@@ -17,6 +17,9 @@ public class SacemRegistration {
     @Column(nullable = false)
     private LocalDate date;
 
+    public SacemRegistration() {
+    }
+
     public SacemRegistration(Long id, String code, LocalDate date) {
         this.id = id;
         this.code = code;

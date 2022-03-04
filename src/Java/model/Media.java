@@ -12,12 +12,17 @@ import java.time.LocalDate;
 public class Media {
     @EmbeddedId
     MediaId mediaId;
+    @ManyToOne()
+    private Artist artist;
+
     private LocalDate date ;
+
+    public Media() {
+    }
 
     public Media(MediaId mediaId) {
         this.mediaId = mediaId;
         this.date = LocalDate.now();
     }
-    @ManyToOne()
-    private Artist artist;
+
 }

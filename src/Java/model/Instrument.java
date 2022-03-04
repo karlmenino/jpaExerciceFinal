@@ -12,6 +12,9 @@ public class Instrument {
     private String name;
     private InstrementType type;
 
+    public Instrument() {
+    }
+
     public Instrument(String name, InstrementType type) {
         this.name = name;
         this.type = type;
